@@ -125,9 +125,8 @@ speech-emotion-recognition/
 ### Key Findings
 
 1. **Model Efficiency**: GRU models train 15-20% faster than LSTM with comparable accuracy
-2. **Hybrid Advantage**: Hybrid models show 2-3% improvement in complex emotion classification
-3. **Optimization**: Early stopping typically occurs around 50-70 epochs
-4. **Feature Importance**: MFCC features contribute most significantly to accuracy
+2. **Optimization**: Early stopping typically occurs around 50-70 epochs
+3. **Feature Importance**: MFCC features contribute most significantly to accuracy
 
 ## 📚 Documentation
 

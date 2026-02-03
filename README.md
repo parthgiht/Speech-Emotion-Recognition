@@ -14,7 +14,6 @@ A state-of-the-art deep learning system for recognizing emotions from speech aud
 - [Models](#models)
 - [Results](#results)
 - [Documentation](#documentation)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## 🎯 Overview
@@ -195,20 +194,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Librosa for audio processing capabilities
 - The open-source community
 
-
-## 📊 Citation
-
-If you use this project in your research, please cite:
-
-```bibtex
-@misc{speech_emotion_recognition,
-  author = {Your Name},
-  title = {Professional Speech Emotion Recognition System},
-  year = {2026},
-  publisher = {GitHub},
-  url = {https://github.com/yourusername/speech-emotion-recognition}
-}
-```
 
 ---
 

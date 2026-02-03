@@ -4,7 +4,7 @@
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://www.tensorflow.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-A state-of-the-art deep learning system for recognizing emotions from speech audio using LSTM, GRU, and Hybrid architectures.
+A state-of-the-art deep learning system for recognizing emotions from speech audio using LSTM, GRU architectures.
 
 ## 📋 Table of Contents
 
@@ -18,7 +18,7 @@ A state-of-the-art deep learning system for recognizing emotions from speech aud
 
 ## 🎯 Overview
 
-This project implements an advanced Speech Emotion Recognition (SER) system capable of classifying emotions from audio signals. The system leverages state-of-the-art deep learning architectures including LSTM, GRU, and a novel Hybrid model that combines both approaches.
+This project implements an advanced Speech Emotion Recognition (SER) system capable of classifying emotions from audio signals. The system leverages state-of-the-art deep learning architectures including LSTM, GRU, that combines both approaches.
 
 ### Supported Emotions
 
@@ -34,7 +34,7 @@ This project implements an advanced Speech Emotion Recognition (SER) system capa
 
 ### Core Functionality
 
-- **Multi-Model Architecture**: LSTM, GRU, and Hybrid models
+- **Multi-Model Architecture**: LSTM, GRU
 - **Advanced Feature Extraction**: MFCC, Mel Spectrogram, Chroma, Spectral Contrast
 - **Comprehensive Evaluation**: Accuracy, Precision, Recall, F1-Score, Confusion Matrices
 - **Production-Ready**: Modular code, proper error handling, logging
@@ -76,8 +76,8 @@ speech-emotion-recognition/
 │
 ├── logs/                                # TensorBoard logs
 │   ├── lstm/
-│   ├── gru/
-│   └── hybrid/
+│   └── gru/
+│   
 │
 └── utils/                               # Utility modules
     ├── data_loader.py
@@ -110,26 +110,15 @@ speech-emotion-recognition/
 
 **Parameters:** ~200K
 
-### Hybrid Model
-
-**Architecture:**
-- Parallel LSTM & GRU branches
-- Feature concatenation
-- Combined processing
-- Dense layers
-- Softmax output
-
-**Parameters:** ~350K
-
 ## 📈 Results
 
 ### Model Performance Comparison
 
-| Model  | Accuracy | Precision | Recall | F1-Score |
-|--------|----------|-----------|--------|----------|
-| LSTM   | 0.XXX    | 0.XXX     | 0.XXX  | 0.XXX    |
-| GRU    | 0.XXX    | 0.XXX     | 0.XXX  | 0.XXX    |
-| Hybrid | 0.XXX    | 0.XXX     | 0.XXX  | 0.XXX    |
+| Model  | Accuracy | Precision | Recall  | F1-Score |
+|--------|----------|-----------|---------- |----------|
+| LSTM   | 0.992857 | 0.992973  | 0.992857|    0.992862|
+| GRU    | 0.996429 |	0.996458|	0.996429|	0.996428  |
+
 
 *Note: Actual results will vary based on your dataset*
 
@@ -189,7 +178,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- RAVDESS Dataset for emotion audio samples
+- TESS Dataset for emotion audio samples
 - TensorFlow and Keras teams
 - Librosa for audio processing capabilities
 - The open-source community

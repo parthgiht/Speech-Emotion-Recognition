@@ -55,34 +55,31 @@ This project implements an advanced Speech Emotion Recognition (SER) system capa
 ```
 speech-emotion-recognition/
 │
-├── speech_emotion_recognition_pro.ipynb  # Main notebook
-├── requirements.txt                      # Python dependencies
-├── README.md                            # This file
-├── config.py                            # Configuration settings
+├── data/
+│   └── raw/                   # Input audio files (e.g., TESS dataset)
 │
-├── models/                              # Saved models
-│   ├── lstm_best.keras
-│   ├── gru_best.keras
-│   ├── label_encoder.pkl
-│   └── config.json
+├── logs/                      # TensorBoard training logs
+│   ├── lstm/
+│   └── gru/
 │
-├── outputs/                             # Results and visualizations
+├── models/                    # Saved artifacts
+│   ├── best_model_lstm.keras  # Best performing LSTM model
+│   ├── best_model_gru.keras   # Best performing GRU model
+│   ├── label_encoder.pkl      # Saved LabelEncoder object
+│   └── config.json            # Model configuration and parameters
+│
+├── notebooks/
+│   └── speech_emotion_recognition.ipynb  # The main Jupyter Notebook
+│
+├── outputs/                   # Generated visualizations
 │   ├── emotion_distribution.png
 │   ├── training_history.png
 │   ├── confusion_matrices.png
 │   ├── metrics_comparison.png
-│   └── project_report.json
+│   └── audio_visualization_[emotion].png
 │
-├── logs/                                # TensorBoard logs
-│   ├── lstm/
-│   └── gru/
-│   
-│
-└── utils/                               # Utility modules
-    ├── data_loader.py
-    ├── feature_extractor.py
-    ├── model_builder.py
-    └── visualizer.py
+├── README.md                  # Project documentation
+└── requirements.txt           # Python dependencies
 ```
 
 ## 🏗️ Models

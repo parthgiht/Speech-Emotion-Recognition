@@ -63,7 +63,6 @@ speech-emotion-recognition/
 ├── models/                              # Saved models
 │   ├── lstm_best.keras
 │   ├── gru_best.keras
-│   ├── hybrid_best.keras
 │   ├── label_encoder.pkl
 │   └── config.json
 │
